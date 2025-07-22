@@ -1,0 +1,7 @@
+# Minimal requirements for Adobe Hackathon 2025 PDF Processing System
+# This will run the system with keyword-based analysis (no AI dependencies)
+
+flask>=3.1.1
+flask-cors>=4.0.0
+PyMuPDF>=1.23.0
+requests>=2.32.0

@@ -1,0 +1,143 @@
+/* Adobe Hackathon 2025 PDF Processor - Custom Styles */
+
+.outline-item {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--bs-border-color);
+}
+
+.outline-item:last-child {
+    border-bottom: none;
+}
+
+.level-h1 {
+    font-weight: bold;
+    border-left: 4px solid var(--bs-danger);
+    padding-left: 0.75rem;
+}
+
+.level-h2 {
+    border-left: 3px solid var(--bs-warning);
+    padding-left: 0.75rem;
+}
+
+.level-h3 {
+    border-left: 2px solid var(--bs-info);
+    padding-left: 0.75rem;
+}
+
+.outline-tree {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.progress {
+    background-color: var(--bs-gray-200);
+}
+
+.card {
+    border: 1px solid var(--bs-border-color);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.card-header {
+    background-color: var(--bs-gray-100);
+    border-bottom: 1px solid var(--bs-border-color);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.badge {
+    font-size: 0.75em;
+}
+
+.list-group-item {
+    border: 1px solid var(--bs-border-color);
+}
+
+.accordion-button {
+    background-color: var(--bs-gray-50);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--bs-primary);
+    color: white;
+}
+
+.bg-body-secondary {
+    background-color: var(--bs-gray-100) !important;
+}
+
+/* Loading animation */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.loading-pulse {
+    animation: pulse 1.5s infinite;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .outline-item {
+        font-size: 0.9rem;
+    }
+    
+    .badge {
+        font-size: 0.7em;
+    }
+    
+    .container {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+/* File list styling */
+#fileListContent {
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: var(--bs-gray-100);
+    padding: 0.75rem;
+    border-radius: 0.375rem;
+    border: 1px solid var(--bs-border-color);
+}
+
+#fileListContent div {
+    padding: 0.25rem 0;
+    border-bottom: 1px solid var(--bs-border-color);
+}
+
+#fileListContent div:last-child {
+    border-bottom: none;
+}
+
+/* Dark theme adjustments */
+[data-bs-theme="dark"] .bg-body-secondary {
+    background-color: var(--bs-gray-800) !important;
+}
+
+[data-bs-theme="dark"] #fileListContent {
+    background-color: var(--bs-gray-800);
+    color: var(--bs-gray-100);
+}
+
+[data-bs-theme="dark"] .outline-item {
+    border-bottom-color: var(--bs-gray-700);
+}
+
+[data-bs-theme="dark"] .level-h1 {
+    border-left-color: var(--bs-danger);
+}
+
+[data-bs-theme="dark"] .level-h2 {
+    border-left-color: var(--bs-warning);
+}
+
+[data-bs-theme="dark"] .level-h3 {
+    border-left-color: var(--bs-info);
+}
